@@ -8,6 +8,8 @@ import EditContact from './components/contacts/EditContact/EditContact';
 import NavBar from './components/NavBar/NavBar';
 import Spinner from './components/Spinner/Spinner';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 let App=()=> {

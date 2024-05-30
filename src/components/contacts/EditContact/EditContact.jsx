@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { ContactService } from "../../../services/ContactService";
 import Spinner from "../../Spinner/Spinner";
+import './EditContact.css'
 
 const EditContact = () => {
     const navigate = useNavigate();
@@ -175,7 +176,7 @@ const EditContact = () => {
                                         </select>
                                     </div>
                                     <div className="mb-2">
-                                        <input type="submit" className="btn btn-primary" value="Update" />
+                                        <input type="submit" className="updatebtn btn-primary" value="Update" />
                                         <Link to={'/contacts/list'} className="btn btn-dark ms-2">
                                             Cancel
                                         </Link>

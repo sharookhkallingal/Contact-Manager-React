@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ContactService } from "../../../services/ContactService";
 import Spinner from "../../Spinner/Spinner";
+import './ViewContact.css'
 
 const ViewContact = () => {
     const { contactId } = useParams();
@@ -87,7 +88,13 @@ const ViewContact = () => {
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <Link to="/contacts/list" className="btn btn-warning">Back</Link>
+                                        {/* <Link to="/contacts/list" className="btn btn-warning">Back</Link> */}
+                                        
+                                        <Link to="/contacts/list" style={{textDecoration:'none'}}><button className="goback"><span></span>button</button>
+</Link>
+
+                                        
+  
                                     </div>
                                 </div>
                             </div>

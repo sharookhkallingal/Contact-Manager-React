@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ContactService } from "../../../services/ContactService";
+import './AddContact.css'
 
 const AddContact = () => {
     const navigate = useNavigate();
@@ -160,7 +161,9 @@ const AddContact = () => {
                                     </select>
                                 </div>
                                 <div className="mb-2">
-                                    <input type="submit" className="btn btn-success" value="Create" />
+                                <button class="createbutton"> Create
+                                    </button>
+                                    {/* <input type="submit" className="btn btn-success" value="Create" /> */}
                                     <Link to={'/contacts/list'} className="btn btn-dark ms-2">Cancel</Link>
                                 </div>
                             </form>
